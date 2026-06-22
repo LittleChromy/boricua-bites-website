@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boricua Bites LLC - Puerto Rican Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>🇵🇷 Boricua Bites</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#order" class="btn-order">Order Now</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>¡Bienvenido a Boricua Bites!</h2>
+            <p>Fast, Delicious, High-Quality Puerto Rican Food</p>
+            <p class="tagline">Bringing the authentic taste of Puerto Rico to Springfield</p>
+            <button class="btn-primary" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Boricua Bites, we're passionate about serving fast, delicious, high-quality Puerto Rican food at fair prices. We bring the authentic flavors and vibrant culture of Puerto Rico right to your table. Our team is dedicated to creating a welcoming environment where you can experience real Puerto Rican cuisine and hospitality.</p>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>⭐ 4.4/5 Rating</h3>
+                    <p>Highly rated on UberEats & Yelp</p>
+                </div>
+                <div class="card">
+                    <h3>🏪 Family-Owned</h3>
+                    <p>Passionate about quality food</p>
+                </div>
+                <div class="card">
+                    <h3>🍽️ Authentic</h3>
+                    <p>Traditional Puerto Rican recipes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Contact Info -->
+    <section class="info-banner">
+        <div class="container">
+            <div class="info-item">
+                <h3>📍 Location</h3>
+                <p>1030 State St, Springfield, MA 01109</p>
+            </div>
+            <div class="info-item">
+                <h3>📞 Phone</h3>
+                <p>(413) 301-6288</p>
+            </div>
+            <div class="info-item">
+                <h3>⏰ Hours</h3>
+                <p>Open - Closes 9 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" onclick="showCategory('breakfast')">Breakfast</button>
+                <button class="tab-btn" onclick="showCategory('beverages')">Beverages</button>
+                <button class="tab-btn" onclick="showCategory('fried-bites')">Fried Bites</button>
+                <button class="tab-btn" onclick="showCategory('sandwiches')">Sandwiches</button>
+                <button class="tab-btn" onclick="showCategory('hot-meals')">Hot Meals</button>
+                <button class="tab-btn" onclick="showCategory('specials')">Specials</button>
+                <button class="tab-btn" onclick="showCategory('other')">More</button>
+            </div>
+            
+            <div id="breakfast" class="menu-category active">
+                <h3>Breakfast</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Avena w/ Cinnamon</h4>
+                        <p>Warm oatmeal with a hint of cinnamon. Available in small or large servings.</p>
+                        <span class="price">$3.45</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="beverages" class="menu-category">
+                <h3>Beverages</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Piña Colada</h4>
+                        <p>A creamy blend of pineapple and coconut topped with whipped cream and a cherry.</p>
+                        <span class="price">$8.05</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Orange Juice</h4>
+                        <p>Freshly squeezed orange juice, rich in vitamin C, made from concentrated oranges.</p>
+                        <span class="price">$3.45</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Apple Juice</h4>
+                        <p>Freshly pressed apple juice made from 100% apples, rich in vitamin C.</p>
+                        <span class="price">$3.45</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fried-bites" class="menu-category">
+                <h3>Fried Bites</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Alcapurria</h4>
+                        <p>Crispy, savory fried pastry filled with meat and plantains.</p>
+                        <span class="price">$4.60</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Mac & Cheese Bites</h4>
+                        <p>Golden-brown, crispy bites filled with creamy macaroni and cheese.</p>
+                        <span class="price">$8.05</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Mozzarella Sticks</h4>
+                        <p>Golden, crispy breaded mozzarella sticks served with a side of marinara sauce.</p>
+                        <span class="price">$8.05</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sandwiches" class="menu-category">
+                <h3>Sandwiches</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Boricua House Salad</h4>
+                        <p>Lettuce, tomato, cheese, chicken OR steak with our special sauce. Add bacon for +$1.</p>
+                        <span class="price">$13.80</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hot-meals" class="menu-category">
+                <h3>Hot Meals</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Mofongo Balls</h4>
+                        <p>Mashed plantain balls blended with garlic and herbs, paired with shrimp and a side of creamy dipping sauce.</p>
+                        <span class="price">$6.90</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Shrimp w/ Garlic Sauce</h4>
+                        <p>Served with choice of Tostones or Mofongo Balls. Savory garlic sauce over shrimp.</p>
+                        <span class="price">$16.10</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Mata Monchy Bowl</h4>
+                        <p>Rice bowl with choice of wings or pernil (slow-cooked pork), optional mayoketchup sauce. Latin-American inspired flavors.</p>
+                        <span class="price">$9.20</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="specials" class="menu-category">
+                <h3>Specials</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Late Night Monchy Box</h4>
+                        <p>Comes with 1 order of carne frita, 6 piece order of wings, cheese fries, tostones, mozzarella sticks, mac bites, 2 pizza empanadas, 2 cups of our mayoketchup sauce, 1 cup of BBQ sauce and 1 cup of marinara sauce.</p>
+                        <span class="price">$40.25</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="other" class="menu-category">
+                <h3>More Items</h3>
+                <div class="menu-items">
+                    <p style="text-align: center; color: #666;">Check back soon for more menu items!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Mofongo+Bowl" alt="Mofongo Bowl">
+                    <h4>Mofongo Bowl with Carne Frita</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Seafood+Salad" alt="Seafood Salad">
+                    <h4>Mofongo with Seafood Salad</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Alcapurria" alt="Alcapurria">
+                    <h4>Crispy Alcapurria</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Wings" alt="Wings">
+                    <h4>Delicious Wings</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Fried+Bites" alt="Fried Bites">
+                    <h4>Golden Fried Bites</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Restaurant" alt="Restaurant">
+                    <h4>Our Restaurant</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="orderType">Order Type *</label>
+                    <select id="orderType" name="orderType" required>
+                        <option value="">Select an option</option>
+                        <option value="pickup">Pickup</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address (if delivery)</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </div>
+
+                <div class="form-section">
+                    <h3>Order Items</h3>
+                    <div id="orderItems">
+                        <div class="order-item-row">
+                            <select class="item-select">
+                                <option value="">Select an item</option>
+                                <option value="avena">Avena w/ Cinnamon - $3.45</option>
+                                <option value="pina-colada">Piña Colada - $8.05</option>
+                                <option value="orange-juice">Orange Juice - $3.45</option>
+                                <option value="apple-juice">Apple Juice - $3.45</option>
+                                <option value="alcapurria">Alcapurria - $4.60</option>
+                                <option value="mac-cheese-bites">Mac & Cheese Bites - $8.05</option>
+                                <option value="mozzarella-sticks">Mozzarella Sticks - $8.05</option>
+                                <option value="boricua-salad">Boricua House Salad - $13.80</option>
+                                <option value="mofongo-balls">Mofongo Balls - $6.90</option>
+                                <option value="shrimp-garlic">Shrimp w/ Garlic Sauce - $16.10</option>
+                                <option value="mata-monchy">Mata Monchy Bowl - $9.20</option>
+                                <option value="monchy-box">Late Night Monchy Box - $40.25</option>
+                            </select>
+                            <input type="number" class="item-quantity" placeholder="Qty" min="1" value="1">
+                            <button type="button" class="btn-remove" onclick="removeItem(this)">Remove</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-add-item" onclick="addItem()">+ Add Another Item</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Special Instructions</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="Any special requests or allergies?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment">Payment Method *</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Select payment method</option>
+                        <option value="cash">Cash on Pickup/Delivery</option>
+                        <option value="card">Credit/Debit Card</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary btn-submit">Submit Order</button>
+            </form>
+            <p class="form-note">* Required fields</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📍 Visit Us</h3>
+                    <p>1030 State St<br>Springfield, MA 01109</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Call Us</h3>
+                    <p><a href="tel:+14133016288">(413) 301-6288</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>⏰ Hours</h3>
+                    <p>Open - 9:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Boricua Bites LLC. All rights reserved. 🇵🇷</p>
+            <p>Bringing authentic Puerto Rican flavors to Springfield, MA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
