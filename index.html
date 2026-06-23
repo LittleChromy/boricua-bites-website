@@ -11,6 +11,7 @@
         <nav class="navbar">
             <div class="container">
                 <div class="logo">
+                    <img src="assets/images/logo.png" alt="Boricua Bites logo" class="site-logo">
                     <h1>🇵🇷 Boricua Bites</h1>
                 </div>
                 <ul class="nav-links">
@@ -39,11 +40,11 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>At Boricua Bites, we're passionate about serving fast, delicious, high-quality Puerto Rican food at fair prices. We bring the authentic flavors and vibrant culture of Puerto Rico right to your table. Our team is dedicated to creating a welcoming environment where you can experience real Puerto Rican cuisine and hospitality.</p>
+            <p>At Boricua Bites, we're passionate about serving fast, delicious, high-quality Puerto Rican food at fair prices. We bring the authentic flavors and vibrant culture of Puerto Rico right to Springfield.</p>
             <div class="info-cards">
                 <div class="card">
                     <h3>⭐ 4.4/5 Rating</h3>
-                    <p>Highly rated on UberEats & Yelp</p>
+                    <p>Highly rated on delivery platforms and with local customers</p>
                 </div>
                 <div class="card">
                     <h3>🏪 Family-Owned</h3>
@@ -70,7 +71,12 @@
             </div>
             <div class="info-item">
                 <h3>⏰ Hours</h3>
-                <p>Open - Closes 9 PM</p>
+                <p>
+                  Mon–Thu: 7:00 AM – 9:00 PM<br>
+                  Fri: 7:00 AM – 10:00 PM<br>
+                  Sat: 8:00 AM – 10:00 PM<br>
+                  Sun: 10:00 AM – 6:00 PM
+                </p>
             </div>
         </div>
     </section>
@@ -80,43 +86,127 @@
         <div class="container">
             <h2>Our Menu</h2>
             <div class="menu-tabs">
-                <button class="tab-btn active" onclick="showCategory('breakfast')">Breakfast</button>
-                <button class="tab-btn" onclick="showCategory('beverages')">Beverages</button>
-                <button class="tab-btn" onclick="showCategory('fried-bites')">Fried Bites</button>
+                <button class="tab-btn active" onclick="showCategory('most-ordered')">Most Ordered</button>
                 <button class="tab-btn" onclick="showCategory('sandwiches')">Sandwiches</button>
-                <button class="tab-btn" onclick="showCategory('hot-meals')">Hot Meals</button>
-                <button class="tab-btn" onclick="showCategory('specials')">Specials</button>
-                <button class="tab-btn" onclick="showCategory('other')">More</button>
+                <button class="tab-btn" onclick="showCategory('dogs')">Boricua Dogs</button>
+                <button class="tab-btn" onclick="showCategory('fried-chicken')">Fried Chicken</button>
+                <button class="tab-btn" onclick="showCategory('fries')">Fries</button>
+                <button class="tab-btn" onclick="showCategory('fried-bites')">Fried Bites</button>
+                <button class="tab-btn" onclick="showCategory('drinks')">Drinks</button>
+                <button class="tab-btn" onclick="showCategory('salads')">Salads</button>
             </div>
-            
-            <div id="breakfast" class="menu-category active">
-                <h3>Breakfast</h3>
+
+            <div id="most-ordered" class="menu-category active">
+                <h3>Most Ordered</h3>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <h4>Avena w/ Cinnamon</h4>
-                        <p>Warm oatmeal with a hint of cinnamon. Available in small or large servings.</p>
-                        <span class="price">$3.45</span>
+                        <h4>Tripleta Sandwich</h4>
+                        <p>A classic Puerto Rican sandwich loaded with seasoned pernil (roast pork), chicken, steak, topped with melted cheese, lettuce, tomato, mayo-ketchup sauce and potato chip sticks.</p>
+                        <span class="price">$13.80</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Empanadilla</h4>
+                        <p>Handmade turnover filled with your choice of meat or cheese and fried to golden perfection.</p>
+                        <span class="price">$4.60</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Loaded Boricua Fries</h4>
+                        <p>Crispy fries topped with savory meats, cheese and our special sauces.</p>
+                        <span class="price">$9.20</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Fried Chicken Wings</h4>
+                        <p>Crispy seasoned wings available in multiple sauces.</p>
+                        <span class="price">$13.80</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Frozen Passion Fruit (Parcha)</h4>
+                        <p>Refreshing frozen passion fruit drink.</p>
+                        <span class="price">$6.90</span>
                     </div>
                 </div>
             </div>
 
-            <div id="beverages" class="menu-category">
-                <h3>Beverages</h3>
+            <div id="sandwiches" class="menu-category">
+                <h3>Boricua Sandwiches</h3>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <h4>Piña Colada</h4>
-                        <p>A creamy blend of pineapple and coconut topped with whipped cream and a cherry.</p>
+                        <h4>Chicken Sandwich</h4>
+                        <p>Juicy chicken sandwich with lettuce, tomato and our special sauce.</p>
+                        <span class="price">$10.35</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pernil & Cheese Sandwich</h4>
+                        <p>Roasted pernil with melted cheese, lettuce and tomato.</p>
+                        <span class="price">$11.50</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Tripleta Sandwich</h4>
+                        <p>Pernil, chicken and steak with cheese, lettuce, tomato, mayo-ketchup and potato chips.</p>
+                        <span class="price">$13.80</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Ham & Cheese Sandwich</h4>
+                        <p>Classic ham and melted cheese sandwich.</p>
                         <span class="price">$8.05</span>
                     </div>
                     <div class="menu-item">
-                        <h4>Orange Juice</h4>
-                        <p>Freshly squeezed orange juice, rich in vitamin C, made from concentrated oranges.</p>
-                        <span class="price">$3.45</span>
+                        <h4>El Fulanito Sandwich</h4>
+                        <p>Pernil and ham with white cheese, avocado, mayo-ketchup and potato chip sticks, pressed to perfection.</p>
+                        <span class="price">$11.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dogs" class="menu-category">
+                <h3>Boricua Dogs</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Regular Boricua Dog</h4>
+                        <p>Classic Puerto Rican-style hot dog.</p>
+                        <span class="price">$5.75</span>
                     </div>
                     <div class="menu-item">
-                        <h4>Apple Juice</h4>
-                        <p>Freshly pressed apple juice made from 100% apples, rich in vitamin C.</p>
-                        <span class="price">$3.45</span>
+                        <h4>Cheesy Puerto Rican Dog</h4>
+                        <p>Hot dog topped with melted cheese and signature toppings.</p>
+                        <span class="price">$4.60</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fried-chicken" class="menu-category">
+                <h3>Fried Chicken</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Chicken Tenders</h4>
+                        <p>Crispy chicken tenders served with your choice of dipping sauce.</p>
+                        <span class="price">$9.20</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Fried Chicken Wings</h4>
+                        <p>Classic seasoned wings, fried until crispy.</p>
+                        <span class="price">$13.80</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fries" class="menu-category">
+                <h3>Fries</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Loaded Boricua Fries</h4>
+                        <p>Fries topped with meats, cheese and special sauces.</p>
+                        <span class="price">$9.20</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Regular Fries</h4>
+                        <p>Golden crispy fries.</p>
+                        <span class="price">$5.75</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Yuca Fries</h4>
+                        <p>Fried yuca sticks, crispy on the outside and soft inside.</p>
+                        <span class="price">$6.90</span>
                     </div>
                 </div>
             </div>
@@ -125,72 +215,85 @@
                 <h3>Fried Bites</h3>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <h4>Alcapurria</h4>
-                        <p>Crispy, savory fried pastry filled with meat and plantains.</p>
-                        <span class="price">$4.60</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Mac & Cheese Bites</h4>
-                        <p>Golden-brown, crispy bites filled with creamy macaroni and cheese.</p>
+                        <h4>Mozzarella Sticks</h4>
+                        <p>Breaded and fried mozzarella sticks served with marinara.</p>
                         <span class="price">$8.05</span>
                     </div>
                     <div class="menu-item">
-                        <h4>Mozzarella Sticks</h4>
-                        <p>Golden, crispy breaded mozzarella sticks served with a side of marinara sauce.</p>
+                        <h4>Empanadilla</h4>
+                        <p>Choice of meat or cheese, fried turnover.</p>
+                        <span class="price">$4.60</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Tostones</h4>
+                        <p>Twice-fried green plantains, crunchy and savory.</p>
+                        <span class="price">$4.60</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Sorullito de Maíz w/ Queso</h4>
+                        <p>Corn sticks with cheese.</p>
+                        <span class="price">$3.45</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Chicken Cordon Bleu Bites</h4>
+                        <p>Breaded chicken bites stuffed with ham and cheese.</p>
+                        <span class="price">$9.20</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Yuca Bites</h4>
+                        <p>Cheese-stuffed yuca balls.</p>
+                        <span class="price">$8.05</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Mac & Cheese Bites</h4>
+                        <p>Crispy mac & cheese bites.</p>
                         <span class="price">$8.05</span>
                     </div>
                 </div>
             </div>
 
-            <div id="sandwiches" class="menu-category">
-                <h3>Sandwiches</h3>
+            <div id="drinks" class="menu-category">
+                <h3>Drinks</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Apple Juice</h4>
+                        <p>Fresh apple juice.</p>
+                        <span class="price">$3.45</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Orange Juice</h4>
+                        <p>Fresh orange juice.</p>
+                        <span class="price">$3.45</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Coca Cola / Diet / Sprite / Fanta / Ginger Ale</h4>
+                        <p>Assorted soft drinks.</p>
+                        <span class="price">$2.30</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Frozen Passion Fruit (Parcha)</h4>
+                        <p>Refreshing frozen passion fruit drink.</p>
+                        <span class="price">$6.90</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Piña Colada</h4>
+                        <p>Frozen piña colada drink.</p>
+                        <span class="price">$8.05</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="salads" class="menu-category">
+                <h3>Salads</h3>
                 <div class="menu-items">
                     <div class="menu-item">
                         <h4>Boricua House Salad</h4>
-                        <p>Lettuce, tomato, cheese, chicken OR steak with our special sauce. Add bacon for +$1.</p>
+                        <p>Lettuce, tomato, cheese, choice of chicken OR steak with our special sauce. Add bacon for +$1.</p>
                         <span class="price">$13.80</span>
                     </div>
                 </div>
             </div>
 
-            <div id="hot-meals" class="menu-category">
-                <h3>Hot Meals</h3>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <h4>Mofongo Balls</h4>
-                        <p>Mashed plantain balls blended with garlic and herbs, paired with shrimp and a side of creamy dipping sauce.</p>
-                        <span class="price">$6.90</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Shrimp w/ Garlic Sauce</h4>
-                        <p>Served with choice of Tostones or Mofongo Balls. Savory garlic sauce over shrimp.</p>
-                        <span class="price">$16.10</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Mata Monchy Bowl</h4>
-                        <p>Rice bowl with choice of wings or pernil (slow-cooked pork), optional mayoketchup sauce. Latin-American inspired flavors.</p>
-                        <span class="price">$9.20</span>
-                    </div>
-                </div>
-            </div>
-
-            <div id="specials" class="menu-category">
-                <h3>Specials</h3>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <h4>Late Night Monchy Box</h4>
-                        <p>Comes with 1 order of carne frita, 6 piece order of wings, cheese fries, tostones, mozzarella sticks, mac bites, 2 pizza empanadas, 2 cups of our mayoketchup sauce, 1 cup of BBQ sauce and 1 cup of marinara sauce.</p>
-                        <span class="price">$40.25</span>
-                    </div>
-                </div>
-            </div>
-
-            <div id="other" class="menu-category">
-                <h3>More Items</h3>
-                <div class="menu-items">
-                    <p style="text-align: center; color: #666;">Check back soon for more menu items!</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -267,13 +370,24 @@
                         <div class="order-item-row">
                             <select class="item-select">
                                 <option value="">Select an item</option>
-                                <option value="avena">Avena w/ Cinnamon - $3.45</option>
-                                <option value="pina-colada">Piña Colada - $8.05</option>
-                                <option value="orange-juice">Orange Juice - $3.45</option>
-                                <option value="apple-juice">Apple Juice - $3.45</option>
-                                <option value="alcapurria">Alcapurria - $4.60</option>
-                                <option value="mac-cheese-bites">Mac & Cheese Bites - $8.05</option>
-                                <option value="mozzarella-sticks">Mozzarella Sticks - $8.05</option>
+                                <option value="tripleta">Tripleta Sandwich - $13.80</option>
+                                <option value="empanadilla">Empanadilla - $4.60</option>
+                                <option value="loaded-fries">Loaded Boricua Fries - $9.20</option>
+                                <option value="wings">Fried Chicken Wings - $13.80</option>
+                                <option value="frozen-parcha">Frozen Passion Fruit (Parcha) - $6.90</option>
+                                <option value="chicken-sandwich">Chicken Sandwich - $10.35</option>
+                                <option value="pernil-sandwich">Pernil & Cheese Sandwich - $11.50</option>
+                                <option value="ham-cheese">Ham & Cheese Sandwich - $8.05</option>
+                                <option value="el-fulanito">El Fulanito Sandwich - $11.50</option>
+                                <option value="regular-dog">Regular Boricua Dog - $5.75</option>
+                                <option value="cheesy-dog">Cheesy Puerto Rican Dog - $4.60</option>
+                                <option value="chicken-tenders">Chicken Tenders - $9.20</option>
+                                <option value="regular-fries">Regular Fries - $5.75</option>
+                                <option value="yuca-fries">Yuca Fries - $6.90</option>
+                                <option value="mozzarella">Mozzarella Sticks - $8.05</option>
+                                <option value="tostones">Tostones - $4.60</option>
+                                <option value="sorullito">Sorullito de Maíz w/ Queso - $3.45</option>
+                                <option value="mac-bites">Mac & Cheese Bites - $8.05</option>
                                 <option value="boricua-salad">Boricua House Salad - $13.80</option>
                                 <option value="mofongo-balls">Mofongo Balls - $6.90</option>
                                 <option value="shrimp-garlic">Shrimp w/ Garlic Sauce - $16.10</option>
@@ -322,7 +436,12 @@
                 </div>
                 <div class="contact-card">
                     <h3>⏰ Hours</h3>
-                    <p>Open - 9:00 PM</p>
+                    <p>
+                      Mon–Thu: 7:00 AM – 9:00 PM<br>
+                      Fri: 7:00 AM – 10:00 PM<br>
+                      Sat: 8:00 AM – 10:00 PM<br>
+                      Sun: 10:00 AM – 6:00 PM
+                    </p>
                 </div>
             </div>
         </div>
@@ -336,5 +455,24 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      // simple tab switching
+      function showCategory(id) {
+        document.querySelectorAll('.menu-category').forEach(c => c.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => { if (b.getAttribute('onclick') && b.getAttribute('onclick').includes(id)) b.classList.add('active'); });
+      }
+
+      // order form helpers
+      function addItem() {
+        const container = document.getElementById('orderItems');
+        const row = document.createElement('div');
+        row.className = 'order-item-row';
+        row.innerHTML = document.querySelector('.order-item-row').innerHTML;
+        container.appendChild(row);
+      }
+      function removeItem(btn) { btn.parentElement.remove(); }
+    </script>
 </body>
 </html>
