@@ -50,9 +50,23 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo {
+    height: 48px;
+    width: auto;
+    display: inline-block;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+}
+
 .logo h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 0;
     color: var(--accent-gold);
 }
 
@@ -89,7 +103,9 @@ header {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-blue) 100%);
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
     color: var(--primary-white);
     padding: 6rem 2rem;
     text-align: center;
